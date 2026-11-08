@@ -1,0 +1,166 @@
+{
+  "benchmark": {
+    "device": "cpu",
+    "enabled": false,
+    "num_runs": 2000,
+    "num_threads": 1,
+    "profile_memory": true,
+    "warmup_runs": 50
+  },
+  "dataset": {
+    "loader": {
+      "batch_size": 1024,
+      "num_workers": 4,
+      "persistent_workers": true,
+      "pin_memory": true
+    },
+    "name": "pu",
+    "params": {
+      "bytes_cache_limit": 3000000000.0,
+      "feature_pipeline": {
+        "name": "classic_27d_v1",
+        "params": {
+          "aggregation_step": 16,
+          "aggregation_window": 64,
+          "drop_edges": 640,
+          "raw_channel_indices": [
+            0,
+            1,
+            2
+          ],
+          "sampling_rate": 40000,
+          "use_preset_scaler": true
+        }
+      },
+      "files_per_chunk": 1,
+      "horizon_size": 240,
+      "root": "/home/jovyan/kovalenko/industrial_ad-main/data/PU",
+      "test_patterns": [
+        "K0*/N15_*/",
+        "KA*/N15_*_1/"
+      ],
+      "train_patterns": [
+        "K0*/N15_*/"
+      ],
+      "val_patterns": [
+        "K0*/N15_*/",
+        "KA*/N15_*_1/"
+      ],
+      "window_overlap": 97,
+      "window_size": 120
+    }
+  },
+  "debug": {
+    "dataset": {
+      "test_file_limit": null,
+      "train_file_limit": null,
+      "val_file_limit": null
+    },
+    "trainer": {
+      "max_eval_batches": null,
+      "max_train_batches": null
+    }
+  },
+  "loss": {
+    "name": "mse",
+    "params": {}
+  },
+  "model": {
+    "name": "tcn_light_forecaster",
+    "params": {
+      "activation": "relu",
+      "dilations": null,
+      "dropout": 0.0,
+      "final_steps": 60,
+      "head_mixer_channels": 128,
+      "head_temporal_bases": 2,
+      "hidden_channels": 64,
+      "kernel_size": 5,
+      "norm": "group",
+      "num_blocks": 4,
+      "separable": true
+    }
+  },
+  "optimizer": {
+    "name": "adamw",
+    "params": {
+      "lr": 0.003,
+      "weight_decay": 0.0001
+    }
+  },
+  "run": {
+    "dir": "/home/jovyan/kovalenko/industrial_ad-main/runs_phase0/TCN-light-forecasting/082-s43-h240-sep1-hid64-bl4-ker5-fs60-tb2-mix128",
+    "name": "082-s43-h240-sep1-hid64-bl4-ker5-fs60-tb2-mix128",
+    "notes": "TCN light forecasting for PU.",
+    "seed": 43,
+    "tags": [
+      "tcn",
+      "forecasting",
+      "pu"
+    ]
+  },
+  "runtime": {
+    "input_shape": [
+      120,
+      27
+    ],
+    "score_feature_dim": 27,
+    "target_shape": [
+      240,
+      27
+    ],
+    "test_file_count": 396,
+    "train_file_count": 360,
+    "val_file_count": 396
+  },
+  "scheduler": {
+    "name": "warmup_cosine",
+    "params": {
+      "min_lr": 1e-06,
+      "start_factor": 0.0001,
+      "warmup_epochs": 10
+    }
+  },
+  "scoring": {
+    "error_reducer": {
+      "name": "mean_abs",
+      "params": {
+        "reduce_dims": [
+          1
+        ]
+      }
+    },
+    "score_estimator": {
+      "name": "mahalanobis",
+      "params": {
+        "eps": 1e-05
+      }
+    },
+    "threshold": {
+      "name": "best_f1",
+      "params": {}
+    }
+  },
+  "task": {
+    "type": "forecasting"
+  },
+  "trainer": {
+    "amp": false,
+    "checkpoint": {
+      "metric": "val/roc_auc",
+      "min_delta": 0.0,
+      "mode": "max"
+    },
+    "clip_grad_norm": 1.0,
+    "device": "cuda",
+    "early_stopping": {
+      "enabled": false,
+      "metric": "val/roc_auc",
+      "min_delta": 0.0,
+      "mode": "max",
+      "patience": 12
+    },
+    "epochs": 110,
+    "eval_every_n_epochs": 10
+  }
+}

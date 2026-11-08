@@ -1,0 +1,9 @@
+date,host,file,block_N,trim,variant,mean_abs,median_abs,p99_abs,max_abs,worst_feature,n_blocks,units,thr_file,thr_calibrated
+2026-11-06T09:45:31,"DESKTOP-U9581L2|Intel64 Family 6 Model 170 Stepping 4, GenuineIntel|py3.12.10",norm,3248,640,V0,0.1253,0.0168,1.5258,82.709,ch0 WavD1,200,scaler std,0.27859 0.35372 0.56527,0.27859 0.35372 0.56527
+2026-11-06T09:45:31,"DESKTOP-U9581L2|Intel64 Family 6 Model 170 Stepping 4, GenuineIntel|py3.12.10",norm,3248,640,V1,0.0488,0.0078,0.5323,40.270,ch0 Skew,200,scaler std,0.27859 0.35372 0.56527,0.27859 0.35372 0.56527
+2026-11-06T09:45:31,"DESKTOP-U9581L2|Intel64 Family 6 Model 170 Stepping 4, GenuineIntel|py3.12.10",norm,3248,640,V2,0.0182,0.0000,0.2490,1.884,ch0 Skew,200,scaler std,0.27859 0.35372 0.56527,0.27859 0.35372 0.56527
+2026-11-06T09:45:31,"DESKTOP-U9581L2|Intel64 Family 6 Model 170 Stepping 4, GenuineIntel|py3.12.10",norm,3248,640,V3,0.0182,0.0000,0.2490,1.884,ch0 Skew,200,scaler std,0.27859 0.35372 0.56527,0.27859 0.35372 0.56527
+2026-11-06T09:45:43,"DESKTOP-U9581L2|Intel64 Family 6 Model 170 Stepping 4, GenuineIntel|py3.12.10",anom,3248,640,V0,0.0820,0.0144,1.1128,45.835,ch0 WavD1,200,scaler std,0.28557 0.27991 0.30317,0.27859 0.35372 0.56527
+2026-11-06T09:45:43,"DESKTOP-U9581L2|Intel64 Family 6 Model 170 Stepping 4, GenuineIntel|py3.12.10",anom,3248,640,V1,0.0344,0.0058,0.4014,18.552,ch0 Skew,200,scaler std,0.28557 0.27991 0.30317,0.27859 0.35372 0.56527
+2026-11-06T09:45:43,"DESKTOP-U9581L2|Intel64 Family 6 Model 170 Stepping 4, GenuineIntel|py3.12.10",anom,3248,640,V2,0.0185,0.0000,0.2470,1.300,ch1 Skew,200,scaler std,0.28557 0.27991 0.30317,0.27859 0.35372 0.56527
+2026-11-06T09:45:43,"DESKTOP-U9581L2|Intel64 Family 6 Model 170 Stepping 4, GenuineIntel|py3.12.10",anom,3248,640,V3,0.1361,0.0165,2.3357,13.681,ch2 Variance,200,scaler std,0.28557 0.27991 0.30317,0.27859 0.35372 0.56527

@@ -1,0 +1,103 @@
+{
+  "best_epoch": 80,
+  "best_metric_name": "val/roc_auc",
+  "best_metric_value": 0.9298716837217176,
+  "best_metrics": {
+    "test/accuracy": 0.8716639993079286,
+    "test/confusion_matrix_values": [
+      [
+        9898,
+        927
+      ],
+      [
+        2040,
+        10254
+      ]
+    ],
+    "test/f1": 0.8736102236421726,
+    "test/mcc": 0.7473186210801342,
+    "test/pr_auc": 0.9518822392716263,
+    "test/precision": 0.9170914944995975,
+    "test/recall": 0.8340653977550024,
+    "test/roc_auc": 0.928246201323915,
+    "test/threshold": 132.5773162841797,
+    "train/loss": 0.014041394789025864,
+    "val/accuracy": 0.8778008478242062,
+    "val/confusion_matrix_values": [
+      [
+        10012,
+        812
+      ],
+      [
+        2013,
+        10281
+      ]
+    ],
+    "val/f1": 0.8792063967161244,
+    "val/mcc": 0.7603207168058487,
+    "val/pr_auc": 0.9529856961129852,
+    "val/precision": 0.9268006851167403,
+    "val/recall": 0.8362615910200097,
+    "val/roc_auc": 0.9298716837217176,
+    "val/threshold": 132.5773162841797
+  },
+  "family": "TCN-reconstruction",
+  "input_shape": [
+    120,
+    27
+  ],
+  "last_epoch": 110,
+  "last_metrics": {
+    "test/accuracy": 0.8649163026082443,
+    "test/confusion_matrix_values": [
+      [
+        9966,
+        859
+      ],
+      [
+        2264,
+        10030
+      ]
+    ],
+    "test/f1": 0.8652892205495406,
+    "test/mcc": 0.7362430919765547,
+    "test/pr_auc": 0.9468109337881259,
+    "test/precision": 0.9211130498668381,
+    "test/recall": 0.8158451277045713,
+    "test/roc_auc": 0.9200199650517669,
+    "test/threshold": 141.3115997314453,
+    "train/loss": 0.012654074010523883,
+    "val/accuracy": 0.8712691409291461,
+    "val/confusion_matrix_values": [
+      [
+        10066,
+        758
+      ],
+      [
+        2218,
+        10076
+      ]
+    ],
+    "val/f1": 0.8713248011068834,
+    "val/mcc": 0.7495161103655174,
+    "val/pr_auc": 0.9466956096448386,
+    "val/precision": 0.9300350747646299,
+    "val/recall": 0.8195867903042134,
+    "val/roc_auc": 0.9196417154258725,
+    "val/threshold": 141.3115997314453
+  },
+  "model_name": "tcn_ae",
+  "parameter_count": 45251,
+  "parameter_size_bytes": 183924,
+  "run_dir": "/home/jovyan/kovalenko/industrial_ad-main/runs_phase0/TCN-reconstruction/047-s43-sep1-hid48-lat4-bl4-ker5",
+  "run_name": "047-s43-sep1-hid48-lat4-bl4-ker5",
+  "score_feature_dim": 27,
+  "state_dict_size_bytes": 183924,
+  "stopped_early": false,
+  "target_shape": [
+    120,
+    27
+  ],
+  "task_type": "reconstruction",
+  "total_time_seconds": 608.9603390693665
+}

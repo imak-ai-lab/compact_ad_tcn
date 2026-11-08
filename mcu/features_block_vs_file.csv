@@ -1,0 +1,7 @@
+date,host,file,block_N,trim,check,value,tol,status,detail,fs,drop_edges
+2026-11-06T09:44:16,"DESKTOP-U9581L2|Intel64 Family 6 Model 170 Stepping 4, GenuineIntel|py3.12.10",norm,file,file ends,reproduce_sr006_dump,0.000e+00,0.0001,PASS,"shape (15921, 27)",40000,640
+2026-11-06T09:44:18,"DESKTOP-U9581L2|Intel64 Family 6 Model 170 Stepping 4, GenuineIntel|py3.12.10",norm,3248,640,block_vs_file_scaled_abs,0.1253,,INFO,median 0.0168 p99 1.5258 max 82.709; worst feature ch0 WavD1 mean 0.3935; 200 blocks,40000,640
+2026-11-06T09:44:19,"DESKTOP-U9581L2|Intel64 Family 6 Model 170 Stepping 4, GenuineIntel|py3.12.10",norm,1968,0,block_vs_file_scaled_abs,0.1462,,INFO,median 0.0230 p99 1.7799 max 42.714; worst feature ch0 WavD1 mean 0.4956; 200 blocks,40000,640
+2026-11-06T09:44:20,"DESKTOP-U9581L2|Intel64 Family 6 Model 170 Stepping 4, GenuineIntel|py3.12.10",anom,file,file ends,reproduce_sr006_dump,0.000e+00,0.0001,PASS,"shape (15921, 27)",40000,640
+2026-11-06T09:44:22,"DESKTOP-U9581L2|Intel64 Family 6 Model 170 Stepping 4, GenuineIntel|py3.12.10",anom,3248,640,block_vs_file_scaled_abs,0.0820,,INFO,median 0.0144 p99 1.1128 max 45.835; worst feature ch0 WavD1 mean 0.2450; 200 blocks,40000,640
+2026-11-06T09:44:25,"DESKTOP-U9581L2|Intel64 Family 6 Model 170 Stepping 4, GenuineIntel|py3.12.10",anom,1968,0,block_vs_file_scaled_abs,0.0982,,INFO,median 0.0192 p99 1.3086 max 56.187; worst feature ch0 WavD1 mean 0.3021; 200 blocks,40000,640

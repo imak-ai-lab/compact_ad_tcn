@@ -1,0 +1,380 @@
+[
+  {
+    "family": "Conv-reconstruction",
+    "run_name": "048-hid32.48.64.96-lat24-ker9",
+    "code": "CR048",
+    "reasons": [
+      "TableI_best_per_family_le1MiB"
+    ],
+    "paper_seeds": [
+      42,
+      43,
+      44
+    ],
+    "paper_roc_auc_mean": 0.921946,
+    "paper_roc_auc_std": 0.003586,
+    "paper_parameter_count": 251091,
+    "paper_size_mib": 0.957836
+  },
+  {
+    "family": "GRU-repeated-reconstruction",
+    "run_name": "011-lay2-hid96-lat96",
+    "code": "GR011",
+    "reasons": [
+      "TableI_best_per_family_le1MiB"
+    ],
+    "paper_seeds": [
+      42,
+      43,
+      44
+    ],
+    "paper_roc_auc_mean": 0.856279,
+    "paper_roc_auc_std": 0.006774,
+    "paper_parameter_count": 243483,
+    "paper_size_mib": 0.928814
+  },
+  {
+    "family": "GRU-seq2seq-forecasting",
+    "run_name": "051-hor120-lay1-hid192-rev0-teach0.25",
+    "code": "GF051",
+    "reasons": [
+      "TableI_best_per_family_le1MiB"
+    ],
+    "paper_seeds": [
+      42,
+      43,
+      44
+    ],
+    "paper_roc_auc_mean": 0.838136,
+    "paper_roc_auc_std": 0.005452,
+    "paper_parameter_count": 259803,
+    "paper_size_mib": 0.99107
+  },
+  {
+    "family": "GRU-seq2seq-reconstruction",
+    "run_name": "005-lay1-hid128-rev1-teach0.25",
+    "code": "GS005",
+    "reasons": [
+      "TableI_best_per_family_le1MiB"
+    ],
+    "paper_seeds": [
+      42,
+      43,
+      44
+    ],
+    "paper_roc_auc_mean": 0.832515,
+    "paper_roc_auc_std": 0.006432,
+    "paper_parameter_count": 124059,
+    "paper_size_mib": 0.473248
+  },
+  {
+    "family": "MLP-forecasting",
+    "run_name": "088-h64-hid2048.128.128.2048",
+    "code": "MF088",
+    "reasons": [
+      "best_MF_overall(no_le1MiB_configs)"
+    ],
+    "paper_seeds": [
+      42,
+      43,
+      44
+    ],
+    "paper_roc_auc_mean": 0.880824,
+    "paper_roc_auc_std": 0.007519,
+    "paper_parameter_count": 10721216,
+    "paper_size_mib": 40.898193
+  },
+  {
+    "family": "MLP-reconstruction",
+    "run_name": "064-dims-3240-27",
+    "code": "MR064",
+    "reasons": [
+      "TableI_best_per_family_le1MiB"
+    ],
+    "paper_seeds": [
+      42,
+      43,
+      44
+    ],
+    "paper_roc_auc_mean": 0.779165,
+    "paper_roc_auc_std": 0.006299,
+    "paper_parameter_count": 178227,
+    "paper_size_mib": 0.679882
+  },
+  {
+    "family": "PCA-reconstruction",
+    "run_name": "005-k32",
+    "code": "PR005",
+    "reasons": [
+      "TableI_best_per_family_le1MiB"
+    ],
+    "paper_seeds": [
+      42,
+      43,
+      44
+    ],
+    "paper_roc_auc_mean": 0.767246,
+    "paper_roc_auc_std": 0.001908,
+    "paper_parameter_count": 106920,
+    "paper_size_mib": 0.407867
+  },
+  {
+    "family": "TCN-forecasting",
+    "run_name": "042-h16-sep1-hid64-bl3-ker5-fs16",
+    "code": "TF042",
+    "reasons": [
+      "C2_matched_TF_for_K1_H16"
+    ],
+    "paper_seeds": [
+      42,
+      43,
+      44
+    ],
+    "paper_roc_auc_mean": 0.831551,
+    "paper_roc_auc_std": 0.011807,
+    "paper_parameter_count": 38064,
+    "paper_size_mib": 0.145203
+  },
+  {
+    "family": "TCN-forecasting",
+    "run_name": "051-h16-sep1-hid64-bl4-ker5-fs16",
+    "code": "TF051",
+    "reasons": [
+      "C2_matched_TF_for_K2_H16"
+    ],
+    "paper_seeds": [
+      42,
+      43,
+      44
+    ],
+    "paper_roc_auc_mean": 0.811359,
+    "paper_roc_auc_std": 0.008793,
+    "paper_parameter_count": 47152,
+    "paper_size_mib": 0.179871
+  },
+  {
+    "family": "TCN-forecasting",
+    "run_name": "212-h120-sep1-hid64-bl4-ker5-fs60",
+    "code": "TF212",
+    "reasons": [
+      "TableI_best_per_family_le1MiB",
+      "C2_matched_TF_for_K1_H120"
+    ],
+    "paper_seeds": [
+      42,
+      43,
+      44
+    ],
+    "paper_roc_auc_mean": 0.897686,
+    "paper_roc_auc_std": 0.00563,
+    "paper_parameter_count": 237448,
+    "paper_size_mib": 0.905792
+  },
+  {
+    "family": "TCN-forecasting",
+    "run_name": "213-h120-sep1-hid64-bl4-ker5-fs120",
+    "code": "TF213",
+    "reasons": [
+      "C2_matched_TF_for_K2_H120"
+    ],
+    "paper_seeds": [
+      42,
+      43,
+      44
+    ],
+    "paper_roc_auc_mean": 0.898995,
+    "paper_roc_auc_std": 0.006516,
+    "paper_parameter_count": 431848,
+    "paper_size_mib": 1.647369
+  },
+  {
+    "family": "TCN-light-forecasting",
+    "run_name": "018-h16-sep1-hid64-bl4-ker5-fs16-tb2-mix128",
+    "code": "TL018",
+    "reasons": [
+      "C2_best_TL_cell_K2_H16"
+    ],
+    "paper_seeds": [
+      42,
+      43,
+      44
+    ],
+    "paper_roc_auc_mean": 0.826749,
+    "paper_roc_auc_std": 0.00529,
+    "paper_parameter_count": 58619,
+    "paper_size_mib": 0.223614
+  },
+  {
+    "family": "TCN-light-forecasting",
+    "run_name": "069-h120-sep1-hid64-bl4-ker5-fs60-tb1-mix128",
+    "code": "TL069",
+    "reasons": [
+      "C2_best_TL_cell_K1_H120"
+    ],
+    "paper_seeds": [
+      42,
+      43,
+      44
+    ],
+    "paper_roc_auc_mean": 0.906952,
+    "paper_roc_auc_std": 0.011345,
+    "paper_parameter_count": 57203,
+    "paper_size_mib": 0.218212
+  },
+  {
+    "family": "TCN-light-forecasting",
+    "run_name": "072-h120-sep1-hid64-bl4-ker5-fs120-tb2-mix128",
+    "code": "TL072",
+    "reasons": [
+      "C2_best_TL_cell_K2_H120"
+    ],
+    "paper_seeds": [
+      42,
+      43,
+      44
+    ],
+    "paper_roc_auc_mean": 0.91296,
+    "paper_roc_auc_std": 0.006712,
+    "paper_parameter_count": 87115,
+    "paper_size_mib": 0.332317
+  },
+  {
+    "family": "TCN-light-forecasting",
+    "run_name": "082-h240-sep1-hid64-bl4-ker5-fs60-tb2-mix128",
+    "code": "TL082",
+    "reasons": [
+      "TableI_best_per_family_le1MiB",
+      "headline_TL082"
+    ],
+    "paper_seeds": [
+      42,
+      43,
+      44
+    ],
+    "paper_roc_auc_mean": 0.929041,
+    "paper_roc_auc_std": 0.00311,
+    "paper_parameter_count": 87355,
+    "paper_size_mib": 0.333233
+  },
+  {
+    "family": "TCN-light-forecasting",
+    "run_name": "101-h16-sep1-hid64-bl3-ker5-fs16-tb1-mix128",
+    "code": "TL101",
+    "reasons": [
+      "C2_best_TL_cell_K1_H16"
+    ],
+    "paper_seeds": [
+      42,
+      43,
+      44
+    ],
+    "paper_roc_auc_mean": 0.83611,
+    "paper_roc_auc_std": 0.007335,
+    "paper_parameter_count": 41067,
+    "paper_size_mib": 0.156658
+  },
+  {
+    "family": "TCN-reconstruction",
+    "run_name": "025-sep1-hid32-lat4-bl2-ker7",
+    "code": "TR025",
+    "reasons": [
+      "TableII_budget_winner_le0.05MiB"
+    ],
+    "paper_seeds": [
+      42,
+      43,
+      44
+    ],
+    "paper_roc_auc_mean": 0.906216,
+    "paper_roc_auc_std": 0.008435,
+    "paper_parameter_count": 12515,
+    "paper_size_mib": 0.047741
+  },
+  {
+    "family": "TCN-reconstruction",
+    "run_name": "028-sep1-hid32-lat4-bl4-ker3",
+    "code": "TR028",
+    "reasons": [
+      "TableII_budget_winner_le0.10MiB"
+    ],
+    "paper_seeds": [
+      42,
+      43,
+      44
+    ],
+    "paper_roc_auc_mean": 0.928056,
+    "paper_roc_auc_std": 0.004467,
+    "paper_parameter_count": 20963,
+    "paper_size_mib": 0.079967
+  },
+  {
+    "family": "TCN-reconstruction",
+    "run_name": "047-sep1-hid48-lat4-bl4-ker5",
+    "code": "TR047",
+    "reasons": [
+      "TableII_budget_winner_le0.25MiB"
+    ],
+    "paper_seeds": [
+      42,
+      43,
+      44
+    ],
+    "paper_roc_auc_mean": 0.938138,
+    "paper_roc_auc_std": 0.005921,
+    "paper_parameter_count": 45251,
+    "paper_size_mib": 0.172619
+  },
+  {
+    "family": "TCN-reconstruction",
+    "run_name": "065-sep1-hid64-lat4-bl4-ker5",
+    "code": "TR065",
+    "reasons": [
+      "TableII_budget_winner_le0.50MiB"
+    ],
+    "paper_seeds": [
+      42,
+      43,
+      44
+    ],
+    "paper_roc_auc_mean": 0.939671,
+    "paper_roc_auc_std": 0.010598,
+    "paper_parameter_count": 76707,
+    "paper_size_mib": 0.292614
+  },
+  {
+    "family": "TCN-reconstruction",
+    "run_name": "138-sep0-hid64-lat4-bl5-ker3",
+    "code": "TR138",
+    "reasons": [
+      "TableI_best_per_family_le1MiB",
+      "TableII_budget_winner_le1.00MiB",
+      "TableII_budget_winner_le2.00MiB"
+    ],
+    "paper_seeds": [
+      42,
+      43,
+      44
+    ],
+    "paper_roc_auc_mean": 0.943099,
+    "paper_roc_auc_std": 0.007455,
+    "paper_parameter_count": 252323,
+    "paper_size_mib": 0.962536
+  },
+  {
+    "family": "Transformer-reconstruction",
+    "run_name": "133-lay3-mod48-lat4-ff196",
+    "code": "XR133",
+    "reasons": [
+      "TableI_best_per_family_le1MiB"
+    ],
+    "paper_seeds": [
+      42,
+      43,
+      44
+    ],
+    "paper_roc_auc_mean": 0.913861,
+    "paper_roc_auc_std": 0.009826,
+    "paper_parameter_count": 175543,
+    "paper_size_mib": 0.669643
+  }
+]

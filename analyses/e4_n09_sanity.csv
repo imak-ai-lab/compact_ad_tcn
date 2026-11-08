@@ -1,0 +1,11 @@
+date,host,check,value,reference,status,note
+2026-11-06T14:34:03,"DESKTOP-U9581L2|Intel64 Family 6 Model 170 Stepping 4, GenuineIntel|py3.12.10",bearing_labels_n09_equal_n15,0,0,PASS,"18 bearings in N09; K0* normal, KA* damaged"
+2026-11-06T14:34:03,"DESKTOP-U9581L2|Intel64 Family 6 Model 170 Stepping 4, GenuineIntel|py3.12.10",normal_iff_K0_damaged_iff_KA,0,0,PASS,
+2026-11-06T14:34:03,"DESKTOP-U9581L2|Intel64 Family 6 Model 170 Stepping 4, GenuineIntel|py3.12.10",normal_feature_mean_shift_median_abs,0.095,,MEASURED,"N09 minus N15 normal test, in std of N15 normal test, over 27 features"
+2026-11-06T14:34:03,"DESKTOP-U9581L2|Intel64 Family 6 Model 170 Stepping 4, GenuineIntel|py3.12.10",normal_feature_mean_shift_top,-0.63,,MEASURED,cur2 Variance
+2026-11-06T14:34:03,"DESKTOP-U9581L2|Intel64 Family 6 Model 170 Stepping 4, GenuineIntel|py3.12.10",normal_feature_mean_shift_top,-0.62,,MEASURED,cur1 Variance
+2026-11-06T14:34:03,"DESKTOP-U9581L2|Intel64 Family 6 Model 170 Stepping 4, GenuineIntel|py3.12.10",normal_feature_mean_shift_top,-0.59,,MEASURED,cur2 LineInt
+2026-11-06T14:34:03,"DESKTOP-U9581L2|Intel64 Family 6 Model 170 Stepping 4, GenuineIntel|py3.12.10",normal_feature_mean_shift_top,-0.59,,MEASURED,cur1 LineInt
+2026-11-06T14:34:03,"DESKTOP-U9581L2|Intel64 Family 6 Model 170 Stepping 4, GenuineIntel|py3.12.10",normal_feature_mean_shift_top,-0.57,,MEASURED,cur2 P2P
+2026-11-06T14:34:03,"DESKTOP-U9581L2|Intel64 Family 6 Model 170 Stepping 4, GenuineIntel|py3.12.10",roc_no_model_distance_N15,0.5231,,MEASURED,"feature rows, z-distance from normal val of the same condition; no training, a sanity baseline, not a method of the paper"
+2026-11-06T14:34:03,"DESKTOP-U9581L2|Intel64 Family 6 Model 170 Stepping 4, GenuineIntel|py3.12.10",roc_no_model_distance_N09,0.5030,,MEASURED,"feature rows, z-distance from normal val of the same condition; no training, a sanity baseline, not a method of the paper"

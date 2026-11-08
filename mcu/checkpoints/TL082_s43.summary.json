@@ -1,0 +1,103 @@
+{
+  "best_epoch": 100,
+  "best_metric_name": "val/roc_auc",
+  "best_metric_value": 0.9289843494983868,
+  "best_metrics": {
+    "test/accuracy": 0.8470781283082787,
+    "test/confusion_matrix_values": [
+      [
+        5416,
+        1543
+      ],
+      [
+        1346,
+        10587
+      ]
+    ],
+    "test/f1": 0.8799401570876448,
+    "test/mcc": 0.66959598974632,
+    "test/pr_auc": 0.962697814193655,
+    "test/precision": 0.8727947238252267,
+    "test/recall": 0.8872035531718763,
+    "test/roc_auc": 0.9311299050584763,
+    "test/threshold": 134.20567321777344,
+    "train/loss": 0.22746538719231332,
+    "val/accuracy": 0.8464393658200329,
+    "val/confusion_matrix_values": [
+      [
+        5459,
+        1467
+      ],
+      [
+        1429,
+        10504
+      ]
+    ],
+    "val/f1": 0.8788487282463187,
+    "val/mcc": 0.6692140870392045,
+    "val/pr_auc": 0.9619212430216397,
+    "val/precision": 0.8774538467964247,
+    "val/recall": 0.8802480516215537,
+    "val/roc_auc": 0.9289843494983868,
+    "val/threshold": 134.20567321777344
+  },
+  "family": "TCN-light-forecasting",
+  "input_shape": [
+    120,
+    27
+  ],
+  "last_epoch": 110,
+  "last_metrics": {
+    "test/accuracy": 0.8487190345119627,
+    "test/confusion_matrix_values": [
+      [
+        5450,
+        1509
+      ],
+      [
+        1349,
+        10584
+      ]
+    ],
+    "test/f1": 0.8810455340048281,
+    "test/mcc": 0.6734497736157294,
+    "test/pr_auc": 0.9627469439735101,
+    "test/precision": 0.8752170677251302,
+    "test/recall": 0.8869521495013827,
+    "test/roc_auc": 0.9311767248827267,
+    "test/threshold": 133.9481964111328,
+    "train/loss": 0.22700586685634874,
+    "val/accuracy": 0.8460681902539902,
+    "val/confusion_matrix_values": [
+      [
+        5486,
+        1440
+      ],
+      [
+        1463,
+        10470
+      ]
+    ],
+    "val/f1": 0.878245187266703,
+    "val/mcc": 0.6690227915462666,
+    "val/pr_auc": 0.961718547592294,
+    "val/precision": 0.8790931989924433,
+    "val/recall": 0.8773988100226263,
+    "val/roc_auc": 0.9284723162791269,
+    "val/threshold": 133.9481964111328
+  },
+  "model_name": "tcn_light_forecaster",
+  "parameter_count": 87355,
+  "parameter_size_bytes": 352340,
+  "run_dir": "/home/jovyan/kovalenko/industrial_ad-main/runs_phase0/TCN-light-forecasting/082-s43-h240-sep1-hid64-bl4-ker5-fs60-tb2-mix128",
+  "run_name": "082-s43-h240-sep1-hid64-bl4-ker5-fs60-tb2-mix128",
+  "score_feature_dim": 27,
+  "state_dict_size_bytes": 352340,
+  "stopped_early": false,
+  "target_shape": [
+    240,
+    27
+  ],
+  "task_type": "forecasting",
+  "total_time_seconds": 550.8712797164917
+}

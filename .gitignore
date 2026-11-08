@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+runs/
+data/
+mcu/data/
+mcu/cubeai/
+mcu/checkpoints_raw/
+mcu/firmware/*/build/
+mcu/firmware/*/gen/
+mcu/firmware/*/obj/
+mcu/firmware/validation/App/
+mcu/firmware/third_party/*/

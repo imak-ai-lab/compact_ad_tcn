@@ -1,0 +1,11 @@
+# host side of the microcontroller measurement, versions used for the paper (Python 3.12.10)
+torch==2.15.0
+numpy==2.5.4
+onnx==1.23.2
+onnxruntime==1.31.1
+onnxslim==0.1.99
+pandas==3.1.1
+pyserial==3.5
+PyWavelets==1.10.0
+scikit-learn==1.9.1
+scipy==1.18.1
