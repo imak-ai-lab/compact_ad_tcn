@@ -1,7 +1,7 @@
 % generated from the CSV files of mcu/; do not edit by hand
 \begin{table*}[t]
 \centering
-\caption{One decision on an STM32H755 Cortex-M7 at 400~MHz, from raw samples to the anomaly score; mean $\pm$ std over 500 decisions. ROC-AUC: x86 C-model of the deployed network (ST Edge AI Core) on the Paderborn test windows, for one checkpoint per model from a retraining, the seed closest to the three-seed mean; these means are within 0.01 of Tables~\ref{tab:best_per_family} and~\ref{tab:best_per_budget}. $\Delta$: change in ROC-AUC with block-wise features and a refitted scorer, on every fourth test window. In the int8 rows, the toolchain kept some layers in float32.}
+\caption{One decision on an STM32H755 Cortex-M7 at 400~MHz, from raw samples to the anomaly score; mean $\pm$ std over 500 decisions. ROC-AUC: x86 C-model of the deployed network (ST Edge AI Core) on the Paderborn test windows, for one checkpoint per model from a retraining, the seed closest to the three-seed mean; these means are within 0.01 of Tables~\ref{tab:best_per_family} and~\ref{tab:best_per_budget}. Last column: change in ROC-AUC with block-wise features and a refitted scorer, on every fourth test window. In the int8 rows, the toolchain kept some layers in float32.}
 \label{tab:mcu}
 \small
 \begin{tabular}{lrrrrrrrr}
@@ -9,7 +9,7 @@
 Model & Decision [ms] & Features [ms] & Inference [ms] & Flash [KiB] & Peak RAM [KiB] & Energy [mJ] & ROC-AUC & $\Delta$ \\
 \midrule
 TR047 fp32 & $162.10 \pm 0.04$ & 25.16 & 136.76 & 248 & 181 & 41.7 & 0.928 & $-0.004$ \\
-TR047 int8 & $158.92 \pm 0.04$ & 24.33 & 134.41 & 163 & 156 & 37.2 & 0.924 & $-0.003$ \\
+TR047 int8 & $158.92 \pm 0.04$ & 24.33 & 134.41 & 163 & 157 & 37.2 & 0.924 & $-0.003$ \\
 TL082 fp32 & $283.95 \pm 0.13$ & 68.59 & 215.06 & 399 & 400 & 70.2 & 0.931 & $-0.007$ \\
 TL082 int8 & $211.88 \pm 0.12$ & 71.03 & 140.54 & 178 & 226 & 53.3 & 0.933 & $-0.005$ \\
 TR138 fp32 & $646.31 \pm 0.08$ & 24.28 & 621.86 & 1056 & 205 & 172.3 & 0.939 & $-0.005$ \\
